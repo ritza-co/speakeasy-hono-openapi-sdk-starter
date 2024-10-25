@@ -7,19 +7,19 @@
 
 </div>
 
-This example Hono app demonstrates Speakeasy-recommended practices for generating clear OpenAPI specifications and SDKs.
+This example Hono app demonstrates Speakeasy-recommended practices for creating clear OpenAPI specifications and SDKs.
 
 This project was bootstrapped with the [Hono Node.js starter template](https://hono.dev/docs/getting-started/basic#starter) and has three example API endpoints in `src/routes/users/users.index.ts` to get all users, get a user by id, and create a user.
 
 ## Prerequisites
 
-You need to have Node.js version >= 18 to run this project. You can download Node.js from [here](https://nodejs.org/).
+You need to have [Node.js version >= 18](https://nodejs.org/) installed on your system to run this project.
 
 To generate an SDK, you'll also need the Speakeasy CLI installed, or use the Speakeasy dashboard.
 
 ## Installation
 
-To install the application on your local machine:
+Install the application on your local machine:
 
 1. Clone the repository:
 
@@ -61,6 +61,8 @@ You can use the provided script to run the application in development mode. It w
 npm run dev
 ```
 
+Before starting the dev server, move the `sdk-typescript` folder to a new location outside this project.
+
 ## Creating an OpenAPI specification
 
 Run the following command to create an OpenAPI spec YAML file in your root folder:
@@ -69,9 +71,9 @@ Run the following command to create an OpenAPI spec YAML file in your root folde
 npm run create:openapi
 ```
 
-## Generating an SDK using Speakeasy
+## Creating an SDK with Speakeasy
 
-To generate a Speakeasy SDK run:
+Run the following command to create a Speakeasy SDK:
 
 ```bash
 speakeasy quickstart
