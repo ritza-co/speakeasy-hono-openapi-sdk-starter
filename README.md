@@ -22,11 +22,13 @@ To generate an SDK, you'll also need the Speakeasy CLI installed, or use the Spe
 To install the application on your local machine:
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/speakeasy-api/speakeasy-hono-example.git
 ```
 
 2. Navigate into the directory:
+
 ```bash
 cd speakeasy-hono-example
 ```
@@ -37,7 +39,7 @@ cd speakeasy-hono-example
 npm install
 ```
 
-4. [Install Speakeasy CLI](https://github.com/speakeasy-api/speakeasy#installation):
+4. [Install the Speakeasy CLI](https://github.com/speakeasy-api/speakeasy#installation):
 
 ```bash
 brew install speakeasy-api/homebrew-tap/speakeasy
@@ -46,6 +48,7 @@ brew install speakeasy-api/homebrew-tap/speakeasy
 ## Running the application
 
 Start the server:
+
 ```bash
 npm run start
 ```
@@ -56,6 +59,22 @@ You can use the provided script to run the application in development mode. It w
 
 ```bash
 npm run dev
+```
+
+## Creating an OpenAPI specification
+
+Run the following command to create an OpenAPI spec YAML file in your root folder:
+
+```bash Terminal
+npm run create:openapi
+```
+
+## Generating an SDK using Speakeasy
+
+To generate a Speakeasy SDK run:
+
+```bash
+speakeasy quickstart
 ```
 
 ## License
